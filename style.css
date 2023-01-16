@@ -1,0 +1,33 @@
+.header {
+
+    background-color: red;
+    height: 50px;
+
+}
+
+#form {
+    border: solid;
+    border-color: black;
+    width: 50%;
+    height: 200px;
+    margin: 0% auto;
+    margin-top: 2%;
+}
+
+#uploadFile {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+#imgCSV {
+    display: flex;
+    height: 50%;
+    width: auto;
+    margin: 0% auto;
+}
