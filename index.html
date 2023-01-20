@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <head>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -14,16 +16,39 @@
 
 </header>
 
-<div>
+<div id="card">
 <form id="form">
     <img src="csvImg.png" id="imgCSV">
     <input type="file" id="uploadFile" accept=".csv"/><br>
-    <button class="file-upload">File upload</button>
+    <button class="file-upload">Seleccione archivo</button>
+    <br>
     <label id="mensaje">Inserte un archivo CSV</label>
 </form>
-
+<div id="valor-factura">
+    <label id="textInput">Valor de la factura</label>
+    <input type="number" id="valorFactura"/>
+    <button id="calcular">Calcular imputaciones</button>
+</div>
 </div>
 
+<div id="tableBox">
+<div id="newLabel"></div>
+    <table id="myTable">
+        <thead>
+            <th>Sector</th>
+            <th>Min. Nac.</th>
+            <th>Min. Int.</th>
+            <th>Total llamadas</th>
+            <th> % del Total </th>
+            <th> % a Pagar</th>
+        </thead>
+        <tbody id="bodytable">
+            
+        </tbody>
+
+    </table>
+
+</div>
 <script src="readCSV.js"></script>
 
 <script src="front.js"></script>

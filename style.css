@@ -1,3 +1,7 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
 .header {
 
     background-color: red;
@@ -5,6 +9,9 @@
 
 }
 
+#card {
+    align-items: center;
+}
 #form {
     border: solid;
     border-color: black;
@@ -12,6 +19,9 @@
     height: 200px;
     margin: 0% auto;
     margin-top: 2%;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #uploadFile {
@@ -25,9 +35,57 @@
     width: 1px;
 }
 
+.file-upload {
+    display: flex;
+    margin: 0% auto;
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
 #imgCSV {
     display: flex;
     height: 50%;
     width: auto;
     margin: 0% auto;
+}
+
+#mensaje {
+    display: flex;
+    margin: 0% auto;
+    justify-content: center;
+
+}
+
+#valor-factura {
+    padding-top: 10px;
+    display: flex;
+    margin: 0% auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#textInput{
+    padding-right: 20px;
+   
+}
+#calcular {
+    margin-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#myTable {
+    border: 1px solid red;
+    width: 100%;
+    margin: 0% auto;
+    margin-top: 20px;
+}
+
+th, td {
+
+    
+    border: 1px solid red;
+    
 }
