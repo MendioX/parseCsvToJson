@@ -1,16 +1,23 @@
 body{
     font-family: 'Quicksand', sans-serif;
+    background-image: url(backgroundRW.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header {
 
     background-color: red;
     height: 50px;
+    border-radius: 10px;
 
 }
 
 #card {
     align-items: center;
+    
 }
 #form {
     border: solid;
@@ -22,7 +29,17 @@ body{
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 10px;
 }
+
+#form:hover {
+
+    box-shadow: 5px 5px darkgrey;
+    
+
+}
+
+
 
 #uploadFile {
     border: 0;
@@ -38,11 +55,18 @@ body{
 .file-upload {
     display: flex;
     margin: 0% auto;
-    width: 30%;
+    width: 40%;
     text-decoration: none;
     text-align: center;
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
+}
+
+.file-upload:hover {
+
+    background-color: red;
+    color: white;
+
 }
 
 #imgCSV {
@@ -51,6 +75,19 @@ body{
     width: auto;
     margin: 0% auto;
 }
+
+#imgCSV {
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+      70% { transform:translateY(0%); }
+      80% { transform:translateY(-7%); }
+      90% { transform:translateY(0%); }
+      95% { transform:translateY(-7%); }
+      /* 97% { transform:translateY(0%); } */
+      99% { transform:translateY(-7%); }
+      100% { transform:translateY(0); }
+  }
 
 #mensaje {
     display: flex;
@@ -77,15 +114,18 @@ body{
 }
 
 #myTable {
-    border: 1px solid red;
+    border: 0px solid red;
     width: 100%;
     margin: 0% auto;
     margin-top: 20px;
+    background-color: rgba(255,255,255,0.6);
+    /* opacity: 0.2; */
+    border-radius: 10px;
+    font-weight: bolder;
 }
 
 th, td {
 
-    
     border: 1px solid red;
     
 }
