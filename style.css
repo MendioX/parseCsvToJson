@@ -5,6 +5,11 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 0;
+    
 }
 
 .header {
@@ -12,7 +17,20 @@ body{
     background-color: red;
     height: 50px;
     border-radius: 10px;
+    color: white;
+    align-content: center;
+    
 
+}
+#titulo{
+    display: flex;
+    margin: 0% auto;
+    justify-content: center;
+    /* align-self: center; */
+    margin-top: 1%; 
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 #card {
@@ -129,3 +147,61 @@ th, td {
     border: 1px solid red;
     
 }
+
+.footSite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    color: white;
+    /* border: solid black; */
+    margin-top: auto;
+    height: 90px;
+    width: 100%;
+    
+}
+#logos{
+    
+    margin-top: 2%;
+    align-content: center;
+    padding-left: 2%;
+    padding-right: 3%;
+    height: 30%;
+}
+#logo-one {
+    height: 100%;
+    filter:invert(1);
+}
+#logo-two {
+    height: 100%;
+    filter:invert(1);
+}
+#logo-three {
+    filter:invert(1);
+     height: 90% ;
+     
+}
+#marca{
+    position:relative;
+    bottom: 0;
+}
+
+#logo-one:hover{
+    animation: hithere 1s ease infinite;
+}
+
+#logo-two:hover{
+    animation: hithere 1s ease infinite;
+}
+#logo-three:hover{
+    animation: hithere 1s ease infinite;
+}
+
+  @keyframes hithere {
+    30% { transform: scale(2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
