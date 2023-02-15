@@ -148,6 +148,21 @@ th, td {
     
 }
 
+#btnDownload{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    margin: 0% auto;
+}
+
+#btnDownload:hover {
+
+    background-color: red;
+    color: white;
+
+}
+
 .footSite{
     display: flex;
     flex-direction: column;

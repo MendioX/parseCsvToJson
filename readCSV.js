@@ -280,7 +280,7 @@ function calculoPorcentaje(arrLlamadas){
  minTotalTemp = "<label id=\"total\"> Minutos totales: "+(totalInt+totalNac)+"</label>";
  document.getElementById("newLabel").innerHTML = minTotalTemp;
  document.getElementById("bodytable").innerHTML = temp;
- 
+ document.getElementById("btnDownload").style.display = "flex";//mostramos btn descarga
 }
 
 
