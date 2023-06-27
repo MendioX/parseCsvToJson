@@ -228,8 +228,18 @@ function abrirArchivo(evento){
     }
 }
 
+document.getElementById("valorFactura").addEventListener("keyup", function(event) {
+   if (event.key === "Enter") {
+      const valorFactura = document.getElementById('valor-factura');
+      valorFactura.style.display = 'none';
+      
+   }
+
+})
 window.addEventListener('load',()=>{
-    document.getElementById('uploadFile').addEventListener('change', abrirArchivo);
+   
+      document.getElementById('uploadFile').addEventListener('change', abrirArchivo)   
+   
 })
 
 
@@ -244,6 +254,11 @@ function calcPorcentMonto(monto,auxPorc){
    return ((auxPorc*monto/100).toFixed(2))
 }
 
+
+   
+
+
+
 function calculoPorcentaje(arrLlamadas){
 
    let totalNac = 0;
@@ -251,7 +266,7 @@ function calculoPorcentaje(arrLlamadas){
    let temp = "";
    
    let minTotalTemp ="";
-   let monto = parseInt(document.getElementById("valorFactura").value); 
+   let monto = parseInt(document.getElementById("valorFactura").value);
    console.log((monto) );
    
    arrLlamadas.map(depto =>{
@@ -277,7 +292,7 @@ function calculoPorcentaje(arrLlamadas){
 
  });
 
- minTotalTemp = "<label id=\"total\"> Minutos totales: "+(totalInt+totalNac)+"</label>";
+ minTotalTemp = "<label id=\"total\"> Minutos totales: "+(totalInt+totalNac)+"</label> <label id=\"total-precio-factura\"> Monto factura: $ "+(monto)+"</label>";
  document.getElementById("newLabel").innerHTML = minTotalTemp;
  document.getElementById("bodytable").innerHTML = temp;
  document.getElementById("btnDownload").style.display = "flex";//mostramos btn descarga
@@ -285,7 +300,7 @@ function calculoPorcentaje(arrLlamadas){
 
 
 
-document.querySelector('#calcular').addEventListener('click',calculoPorcentaje(sectorCount))
+// document.querySelector('#calcular').addEventListener('click',calculoPorcentaje(sectorCount))
 //console.log((sectorCount.names()));
 
 console.log(sectorCount);
