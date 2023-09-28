@@ -242,6 +242,18 @@ window.addEventListener('load',()=>{
    
 })
 
+function calcPorcentDptoInt(depto, minTotalesInt){
+   let calc =(depto.timeCallInt)*100/minTotalesInt;
+   return (calc.toFixed(2));
+
+}
+
+function calcPorcentDptoNac(depto, minTotalesNac){
+   let calc =(depto.timeCallNac)*100/minTotalesNac;
+   return (calc.toFixed(2));
+
+}
+
 
 function calcPorcentDpto(depto, minTotales){
    let calc =(depto.timeCallInt + depto.timeCallNac)*100/minTotales;
@@ -288,6 +300,8 @@ function calculoPorcentaje(arrLlamadas){
    temp += "<td>"+dpto.count+"</td>"
    temp += "<td> % "+auxPorc+"</td>"
    temp += "<td> $ "+calcPorcentMonto(monto,auxPorc)+"</td>"
+   temp += "<td> $ "+calcPorcentMonto(monto,calcPorcentDptoNac(dpto, totalNac))+"</td>"
+   temp += "<td> $ "+calcPorcentMonto(monto,calcPorcentDptoInt(dpto, totalInt))+"</td>"
    temp += "</tr>"
 
  });
